@@ -22,23 +22,57 @@
             border-bottom: 1px solid black;
             border-top: 4px solid black;
         }
+        nav > ul {
+            display: flex;
+            background-color: burlywood ;
+            margin: 0;
+            padding: 1em;
+            justify-content: center;
+        }
+        nav > ul > li {
+            list-style: none;
+            justify-content: space-evenly;
+            padding: 0 1em;
+            border: 1px solid red;
+        }
+        nav > ul > li:hover {
+            background: yellow;
+            padding: 1em;
+            margin-top: -1em;
+            margin-bottom: -1em;
+        }
 
 
     </style>
 </head>
 <body>
-    <nav>
-        <h1>NAV</h1>
+    <nav aria-label="Main">
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#my-interests">My Interests</a></li>
+            <li><a href="#my-experiences">My Expereinces</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
     <header>
-        <h2>Header</h2>
+        <a name="intro"></a>
+        <h1>Header</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vel eveniet odio dolor eligendi deserunt laboriosam rem ut adipisci voluptatum temporibus aliquam nisi, incidunt reiciendis? Sint officia architecto rerum consequuntur?</p>
+        <a href="#contact">Contact Me</a>
+        <img src="https://via.placeholder.com/1600x500" alt="placeholder image">
     </header>
     <main>
-        <h2>Main</h2>
+        <section>
+            <div class="inner-container">
+                <div class="col col-1-2"></div>                
+                <div class="col col-1-2"></div>
+            </div>
+        </section>
     </main>
     <footer>
         <h2>Footer</h2>
-    </footer>
+    </footer>11111
     <h1>Russ Ryba</h1>
 
     
